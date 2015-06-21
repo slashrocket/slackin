@@ -12,4 +12,4 @@ RUN make
 
 EXPOSE 3000
 
-CMD ./bin/slackin --channels $SLACK_CHANNELS --port $PORT $SLACK_SUBDOMAIN $SLACK_API_TOKEN
+CMD ./bin/slackin --interval 30000 --port 8080 $SLACK_SUBDOMAIN $SLACK_API_TOKEN
